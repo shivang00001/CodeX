@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update_meet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shivang.codex.UpdateMeetActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Place"
+        android:id="@+id/updatePlaceButton"
+        android:onClick="onUpdatePlace"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update date"
+        android:onClick="onUpdateDate"
+        android:id="@+id/updateDateButton"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update time"
+        android:onClick="onUpdateTime"
+        android:id="@+id/updateTimeButton"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update Message"
+        android:onClick="onUpdateMsg"
+        android:id="@+id/updateMessageButton"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:onClick="onUpdate"
+        />
+
+
+</LinearLayout>

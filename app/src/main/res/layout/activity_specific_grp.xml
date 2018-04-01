@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_specific_grp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shivang.codex.SpecificGrp">
+<ListView
+    android:paddingLeft="@dimen/_20sdp"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingBottom="@dimen/_20sdp"
+    android:paddingRight="@dimen/_20sdp"
+    android:dividerHeight="@dimen/_5sdp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300sdp"
+    android:id="@+id/list3">
+
+</ListView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add person"
+        android:id="@+id/addPersonButton"
+        android:onClick="onAddPerson"
+        android:layout_gravity="center"/>
+</LinearLayout>

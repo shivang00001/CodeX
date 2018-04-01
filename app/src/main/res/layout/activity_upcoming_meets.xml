@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_upcoming_meets"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shivang.codex.UpcomingMeetsActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upcomingMeetsList"
+        android:padding="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        >
+
+    </ListView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="close"
+        android:layout_gravity="center"
+        android:id="@+id/upcomingMeetsCloseButton"
+        android:onClick="onUpcomingMeetClose"/>
+</LinearLayout>

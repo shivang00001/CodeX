@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_write_message_actvity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.example.shivang.codex.WriteMessageActvity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+    <TextView
+        android:text="Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_30sdp"
+        android:id="@+id/textView"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/_20sdp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:inputType="textMultiLine"
+        android:hint="your message"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/editText3"
+        android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+    <TextView
+        android:text="Memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:id="@+id/MemoTextView"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/_20sdp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:inputType="textMultiLine"
+        android:hint="things to remember for meet"
+
+        android:id="@+id/MemoEditText3"
+        android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:id="@+id/button6"
+        android:background="@drawable/circle_button"
+        android:onClick="onSendMsg"
+        android:layout_gravity="center"
+
+        />
+    </LinearLayout>
+
+
+</LinearLayout>

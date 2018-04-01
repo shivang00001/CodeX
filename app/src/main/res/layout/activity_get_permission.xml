@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_get_permission"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shivang.codex.GetPermissionActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GIVE ME PERMISSION!"
+        android:textSize="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_150sdp"/>
+
+<Switch
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/_35sdp"
+    android:id="@+id/mySwitch"
+    android:text="TOGGLE ME"
+    android:textColor="#e83933"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prmission needed to show your Location"
+        android:textSize="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_35sdp"
+        />
+</LinearLayout>

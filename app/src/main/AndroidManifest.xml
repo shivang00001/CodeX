@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shivang.codex">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".PlacePickerActivity" />
+        <activity
+            android:name=".SignINActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity android:name=".WriteMessageActvity" />
+        <activity android:name=".DetailsActivity" />
+
+        <service
+            android:name=".MyService"
+            android:exported="true" />
+        <service
+            android:name=".MessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".IdService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".MyReceiver">
+            <intent-filter>
+                <action android:name="sendingbroadcast" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".NotifActivity" />
+        <activity android:name=".DateActivity" />
+        <activity android:name=".TimeActivity" />
+        <activity
+            android:name=".FuncActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Login" />
+        <activity android:name=".GroupActivity" />
+        <activity android:name=".ContactPicker" />
+        <activity android:name=".GroupInfo" />
+        <activity
+            android:name=".NavDrarAct"
+            android:label="@string/title_activity_nav_drar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutUs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ShowGroupActivity" />
+        <activity android:name=".SpecificGrp" />
+        <activity
+            android:name=".AddPersonActivity"
+            android:label="@string/title_activity_add_person"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UpcomingMeetsActivity" />
+        <activity android:name=".AppSetupActiviy" />
+        <activity android:name=".SelectReceiver" />
+        <activity android:name=".SelectReceiverGroup" />
+        <activity android:name=".CurrentMeetNotif" />
+        <activity android:name=".SpecificMeet" />
+        <activity android:name=".UpdateMeetActivity" />
+        <activity android:name=".SelectPersonLoc">
+
+        </activity>
+
+
+        <activity
+            android:name=".ShowLoction"
+            android:label="@string/title_activity_show_loction"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".GetPermissionActivity"></activity>
+    </application>
+
+</manifest>

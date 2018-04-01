@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CodeX</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_nv_drwr">NvDrwrActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_nav_drar_">NavDrar_Act</string>
+    <string name="title_activity_nav_drar">NavDrarAct</string>
+    <string-array name="members">
+        <item> bookMeet </item>
+        <item> Groups </item>
+        <item> About Us </item>
+    </string-array>
+    <string name="title_activity_add_person">AddPersonActivity</string>
+    <string name="title_activity_show_loction">ShowLoction</string>
+</resources>
